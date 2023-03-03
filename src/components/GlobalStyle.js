@@ -82,6 +82,31 @@ h5{
 	line-height: 50px;
 	color: #FFFFFF;
 }
+*{
+	font-family: 'Lexend Deca', sans-serif;
+	box-sizing: border-box;
+}
+p, h1, h2, h3, h4{
+	font-family: 'Lexend Deca', sans-serif;
+	font-style: normal;
+	color: #000000;
+}
+h1{
+    font-weight: 200;
+    font-size: 64px;
+    line-height: 80px;
+}
+h2{
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 45px;
+}
+ul{ 
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 28px;
+}
 `;
 
 export default GlobalStyle;

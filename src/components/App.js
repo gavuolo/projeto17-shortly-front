@@ -7,6 +7,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import HomePageLogOff from "./Pages/HomePageLogOff/HomePageLogOff"
 import SignUpPage from "./Pages/SignUpPage/SignUpPage";
 import SignInPage from "./Pages/SignInPage/SignInPage";
+import RankingPage from "./Pages/RankingPage/RankingPage"
 
 export default function App() {
   return (
@@ -15,10 +16,11 @@ export default function App() {
         <GlobalStyle />
         <AuthProvider>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/nova-entrada" element={<HomePageLogOff />} />
+            <Route path="/" element={<HomePageLogOff />} />
+            <Route path="/tela-inicial" element={<HomePage />} />
             <Route path="/sign-up" element={<SignUpPage />} />
-            <Route path="/home" element={<SignInPage />} />
+            <Route path="/sign-in" element={<SignInPage />} />
+            <Route path="/ranking" element={<RankingPage />} />
           </Routes>
         </AuthProvider>
       </Content>
@@ -31,5 +33,5 @@ const Content = styled.div`
   height: 100vh;
   background-color: #FFFFFF;
   display: flex;
-  justify-content: center; ;
+  justify-content: center;
 `;
